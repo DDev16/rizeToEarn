@@ -1,0 +1,96 @@
+/* content.css */
+
+/* Module & Podcast Selection Hub */
+.content-container {
+    background: linear-gradient(to bottom, lavender, deepblue);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .top-banner {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .top-banner h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Podcast Selection */
+  /* Podcast Selection */
+.podcast-section {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping to keep them in a single row */
+  overflow-x: auto; /* Add horizontal scroll if needed */
+}
+
+.podcast-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 20px; /* Add margin between cards */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: calc(25% - 20px); /* Limit the maximum width for each card */
+}
+
+.podcast-card:last-child {
+  margin-right: 0; /* Remove margin from the last card to prevent extra space */
+}
+
+.podcast-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.podcast-card img {
+  width: 100%;
+  height: auto;
+}
+
+  
+  /* Filtering & Categories */
+  .category-tabs {
+    /* Style your category tabs here */
+  }
+  
+  .filter-dropdown {
+    /* Style your filter dropdown here */
+  }
+  
+  /* Learning Modules */
+  .module-thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .module-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: calc(33.33% - 20px);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .module-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .module-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* User Reviews & Feedback */
+  .reviews-section {
+    /* Style your user reviews section here */
+  }
+  

@@ -1,0 +1,246 @@
+/* Style the home container */
+.home-container {
+   
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  /* home.css */
+/* Style for the container */
+.spline-container {
+  display: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-rigth:1000px; /* Add some spacing around the iframe */
+
+}
+
+
+
+/* Media query for screens smaller than 768px (adjust as needed) */
+@media (max-width: 768px) {
+  .spline-container {
+    height: 500px; /* Allow the container to adjust its height */
+    
+  }
+}
+
+
+.background-section {
+  background-image: url('../assets/tech-bg.webp');
+  background-size: cover; /* Adjust as needed */
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Add other CSS properties for styling as needed */
+}
+
+
+  
+  /* Style the first parallax section */
+ /* Style the first parallax section */
+.parallax-section.parallax-image-1 {
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  color: #fff;
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+
+.parallax-section.parallax-image-1 h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  text-shadow: 25px 20px 4px rgba(0, 0, 0, 1), 25px 20px 24px rgba(142, 68, 173, 0.8); /* Add a purple shadow */
+  transform: translateZ(10px);
+  -webkit-background-clip: text;
+  
+  animation: glow 3s ease infinite, shadow-glow 3s ease infinite; /* Add a glowing animation and shadow animation */
+}
+
+.parallax-section.parallax-image-1 .parallax-subtitle {
+  font-size: 3.3rem;
+  text-shadow: 1px 1px 200px rgba(0, 0, 0, 1);
+  transform: translateZ(5px);
+  color: #9b59b6; /* Matching text color */
+}
+
+
+
+
+  /* Style the second parallax section */
+  .parallax-section.parallax-image-2 {
+    /* background-image: url('https://source.unsplash.com/featured/?technology'); */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: #fff;
+    animation: slideInFromRight 1s ease-in-out;
+  }
+  
+  .parallax-section.parallax-image-2 h2 {
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .parallax-section.parallax-image-2 .parallax-subtitle {
+    font-size: 2.3rem;
+  }
+  
+  /* Style the third parallax section */
+  .parallax-section.parallax-image-3 {
+    background-image: url('https://source.unsplash.com/featured/?class');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: #fff;
+    animation: slideInFromLeft 1s ease-in-out;
+  }
+  
+  .parallax-section.parallax-image-3 h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .parallax-section.parallax-image-3 .parallax-subtitle {
+    font-size: 3.3rem;
+  }
+  
+  /* Style the content sections */
+  .content-section {
+    padding: 100px;
+    margin-bottom: 40px;
+    animation: fadeIn 1s ease-in-out;
+    /* background-color: #f0f0f0; */
+    box-shadow: 0 4px 6px rgba(221, 0, 0, 0.1);
+color: white;
+font-size: 1rem;
+
+
+  }
+  
+  .content-section p {
+    font-size: 1.50rem;
+    line-height: 1.6;
+  }
+  
+  /* Style the home image */
+  .home-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    animation: zoomIn 1s ease-in-out;
+  }
+  
+  /* Style the final call to action */
+  .final-cta {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  /* Style the unordered list */
+  ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  /* Style list items */
+  li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+
+  .testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .testimonial-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-text {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-author {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  /* Add more styles as needed */
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .home-container {
+      padding: 10px;
+    }
+ /* Adjust other styles for smaller screens */
+ .parallax-section.parallax-image-1 {
+  padding: 50px 0; /* Example adjustment for smaller padding */
+}  }
+  
+  /* Keyframe animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
